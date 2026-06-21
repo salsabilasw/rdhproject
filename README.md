@@ -1,17 +1,13 @@
 # Adaptive Block-Based Percentile Thresholding with Capacity-Aware RGB Allocation for Reversible Data Hiding
 
 ## Overview
-
 This repository contains the implementation of the reversible data hiding (RDH) method proposed in the paper:
-
 **Adaptive Block-Based Percentile Thresholding with Capacity-Aware RGB Allocation for Reversible Data Hiding**
-
 The proposed method combines adaptive block-based percentile thresholding, Difference Expansion (DE), capacity-aware RGB channel allocation, distortion control using channel-specific MAX_H constraints, and recovery-map-based reversibility to achieve high-capacity data embedding while preserving image quality.
 
 ---
 
 ## Features
-
 * Reversible Data Hiding (RDH)
 * Difference Expansion (DE) embedding
 * Adaptive block-based percentile thresholding (P10–P90)
@@ -26,7 +22,6 @@ The proposed method combines adaptive block-based percentile thresholding, Diffe
 ## Methodology
 
 ### Embedding Process
-
 1. Convert the secret message into a binary sequence.
 2. Separate the RGB image into individual channels.
 3. Allocate payload according to channel capacities.
@@ -40,7 +35,6 @@ The proposed method combines adaptive block-based percentile thresholding, Diffe
 10. Reconstruct the RGB stego image.
 
 ### Extraction Process
-
 1. Load the stego image and metadata.
 2. Verify the Recovery Map (RM).
 3. Extract embedded bits.
@@ -52,10 +46,7 @@ The proposed method combines adaptive block-based percentile thresholding, Diffe
 ---
 
 ## Project Structure
-
 ```text
-dataset/
-├── cover images
 
 output/
 ├── stego images
@@ -73,43 +64,24 @@ src/
 ---
 
 ## Requirements
-
 * Python 3.10+
 * NumPy
 * OpenCV
 * Pandas
 * Scikit-image
 
-## Running the Experiments
-
-### Embedding
-
-```bash
-python embedding.py
-```
-
-### Extraction
-
-```bash
-python extraction.py
-```
-
-### Evaluation
-
-```bash
-python evaluation.py
-```
-
 ---
 
 ## Evaluation Metrics
-
 The implementation evaluates image quality using:
 * Peak Signal-to-Noise Ratio (PSNR)
 * Structural Similarity Index Measure (SSIM)
 * Mean Squared Error (MSE)
 
 ---
+
+## Dataset
+The benchmark images can be downloaded from: https://sipi.usc.edu/database/
 
 ## Citation
 If you use this repository in your research, please cite:
