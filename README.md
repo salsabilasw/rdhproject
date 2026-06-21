@@ -45,33 +45,6 @@ The proposed method combines adaptive block-based percentile thresholding, Diffe
 
 ---
 
-## Project Structure
-```text
-
-output/
-├── stego images
-├── recovered images
-├── recovery maps
-├── evaluation results
-
-src/
-├── embedding.py
-├── extraction.py
-├── evaluation.py
-├── utilities.py
-```
-
----
-
-## Requirements
-* Python 3.10+
-* NumPy
-* OpenCV
-* Pandas
-* Scikit-image
-
----
-
 ## Evaluation Metrics
 The implementation evaluates image quality using:
 * Peak Signal-to-Noise Ratio (PSNR)
