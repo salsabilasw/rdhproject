@@ -1,8 +1,8 @@
-# Adaptive Block-Based Percentile Thresholding with Capacity-Aware RGB Allocation for Reversible Data Hiding
+# Adaptive Percentile Thresholding and Capacity-Adjusment RGB Allocation for Reversible Data Hiding
 
 ## Overview
 This repository contains the implementation of the reversible data hiding (RDH) method proposed in the paper:
-**Adaptive Block-Based Percentile Thresholding with Capacity-Aware RGB Allocation for Reversible Data Hiding**
+**Adaptive Percentile Thresholding and Capacity-Adjusment RGB Allocation for Reversible Data Hiding**
 The proposed method combines adaptive block-based percentile thresholding, Difference Expansion (DE), capacity-aware RGB channel allocation, distortion control using channel-specific MAX_H constraints, and recovery-map-based reversibility to achieve high-capacity data embedding while preserving image quality.
 
 ---
@@ -28,7 +28,7 @@ The proposed method combines adaptive block-based percentile thresholding, Diffe
 4. Partition each channel into non-overlapping 4×3 blocks.
 5. Select embedding candidates using adaptive percentile thresholding.
 6. Embed secret bits using Difference Expansion:
-   d' = 2d + b
+   new_diff = 2 x diff + bit
 7. Apply distortion control using MAX_H constraints.
 8. Perform overflow verification.
 9. Generate the Recovery Map (RM).
